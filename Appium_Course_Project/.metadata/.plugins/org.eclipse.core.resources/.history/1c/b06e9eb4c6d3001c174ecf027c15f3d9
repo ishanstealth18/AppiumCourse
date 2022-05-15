@@ -1,0 +1,44 @@
+package resources;
+
+import org.testng.IReporter;
+import org.testng.annotations.Test;
+import org.testng.reporters.TestHTMLReporter;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.gherkin.model.Feature;
+import com.aventstack.extentreports.reporter.ExtentReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.ExtentSparkReporterConfig;
+import com.aventstack.extentreports.reporter.configuration.Protocol;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
+public class ExtentReportTestNG implements IReporter{
+	
+	private static final String TEST_NAME = "TEST";
+	public ExtentReports extent = new ExtentReports();
+	
+	 private ExtentReports extentRep() {
+	        return new ExtentReports();
+	    }
+	
+	
+	
+	public void generateHTMLReport()
+	{
+		ExtentSparkReporter htmlPath = new ExtentSparkReporter(System.getProperty("user.dir")+"\\Reports\\Report.html");
+		extent.attachReporter(htmlPath);
+		 ExtentTest test = extentRep().createTest(Feature.class, TEST_NAME, "Description");
+	        com.aventstack.extentreports.model.Test model = test.getModel();
+		
+		extent.flush();
+		
+	}
+	
+	
+	
+	
+	
+	
+
+}

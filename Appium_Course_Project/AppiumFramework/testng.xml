@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AppiumFrameworkSuite">
+  
+  <listeners>
+  	<listener class-name="resources.Listeners"/>
+  </listeners>
+  
+  <test thread-count="5" name="AppiumFrameworkTest">
+    <classes>
+      <class name="AppiumPractice.AppiumFramework.ecommerce_tc_4"/>
+      <class name="AppiumPractice.AppiumFramework.AppTest"/>
+      <class name="AppiumPractice.AppiumFramework.apiDemosTest"/>
+    </classes>
+  </test> <!-- AppiumFrameworkTest -->
+</suite> <!-- AppiumFrameworkSuite -->

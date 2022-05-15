@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ 	<parameter name="APK" value="SXM-Debug.apk">
+  	</parameter>
+  	
+  	<listeners>
+  		<listener class-name="testNGPackage.Listeners"></listener>
+  		
+  	</listeners>
+ 
+  <test thread-count="5" name="Test">
+   
+   <!-- Running test cases by using group method -->
+   <groups>
+   	<run>
+   		<include name="smoke">
+   		</include>
+   	</run>
+   </groups>
+   
+    <packages>
+    	<package name="testNGPackage">
+    	
+    	</package>
+    </packages>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="8" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-06T12:33:12 EST" name="Suite" finished-at="2022-03-06T12:33:13 EST" duration-ms="100">
+    <groups>
+      <group name="smoke">
+        <method signature="testClass3.demo2(java.lang.String)[pri:0, instance:testNGPackage.testClass3@2f8dad04]" name="demo2" class="testNGPackage.testClass3"/>
+        <method signature="testClass4.demo4()[pri:0, instance:testNGPackage.testClass4@be35cd9]" name="demo4" class="testNGPackage.testClass4"/>
+        <method signature="testClass4.demo5()[pri:0, instance:testNGPackage.testClass4@be35cd9]" name="demo5" class="testNGPackage.testClass4"/>
+        <method signature="testClass4.demo6()[pri:0, instance:testNGPackage.testClass4@be35cd9]" name="demo6" class="testNGPackage.testClass4"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2022-03-06T12:33:12 EST" name="Test" finished-at="2022-03-06T12:33:13 EST" duration-ms="100">
+      <class name="testNGPackage.testClass4">
+        <test-method signature="demo4()[pri:0, instance:testNGPackage.testClass4@be35cd9]" started-at="2022-03-06T12:33:13 EST" name="demo4" finished-at="2022-03-06T12:33:13 EST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo4 -->
+        <test-method signature="demo5()[pri:0, instance:testNGPackage.testClass4@be35cd9]" started-at="2022-03-06T12:33:13 EST" name="demo5" finished-at="2022-03-06T12:33:13 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo5 -->
+        <test-method signature="demo6()[pri:0, instance:testNGPackage.testClass4@be35cd9]" started-at="2022-03-06T12:33:13 EST" name="demo6" finished-at="2022-03-06T12:33:13 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo6 -->
+      </class> <!-- testNGPackage.testClass4 -->
+      <class name="testNGPackage.testClass3">
+        <test-method signature="demo2(java.lang.String)[pri:0, instance:testNGPackage.testClass3@2f8dad04]" started-at="2022-03-06T12:33:13 EST" name="demo2" finished-at="2022-03-06T12:33:13 EST" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SXM-Debug.apk]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo2 -->
+      </class> <!-- testNGPackage.testClass3 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

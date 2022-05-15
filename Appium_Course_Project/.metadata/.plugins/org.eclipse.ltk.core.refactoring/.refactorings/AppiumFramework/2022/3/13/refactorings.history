@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;AppiumPractice.AppiumFramework.basics&apos; to &apos;apiDemosTest&apos;&#x0D;&#x0A;- Original project: &apos;AppiumFramework&apos;&#x0D;&#x0A;- Original element: &apos;AppiumPractice.AppiumFramework.basics&apos;&#x0D;&#x0A;- Renamed element: &apos;AppiumPractice.AppiumFramework.apiDemosTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;basics&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;AppiumPractice.AppiumFramework{basics.java[basics" matchStrategy="1" name="apiDemosTest" qualified="false" references="true" similarDeclarations="false" stamp="1648322585368" textual="false" version="1.0"/>
+</session>

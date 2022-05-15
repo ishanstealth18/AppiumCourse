@@ -1,0 +1,3 @@
+#extent.properties
+extent.reporter.avent.start=true
+extent.reporter.avent.out=Reports/Index.html

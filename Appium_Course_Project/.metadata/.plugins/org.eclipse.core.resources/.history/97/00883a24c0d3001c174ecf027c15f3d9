@@ -1,0 +1,15 @@
+package resources;
+
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
+public class ExtentReportHTML {
+	
+	
+	public void generateHTMLReport()
+	{
+		ExtentSparkReporter html = new ExtentSparkReporter(System.getProperty("user.dir")+"\\Reports\\Report.html");
+	}
+	
+	
+
+}

@@ -1,0 +1,48 @@
+package resources;
+
+import org.testng.IReporter;
+import org.testng.reporters.TestHTMLReporter;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.ExtentSparkReporterConfig;
+import com.aventstack.extentreports.reporter.configuration.Protocol;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
+public class ExtentReportTestNG implements IReporter{
+	
+	public ExtentSparkReporter avent;
+	public ExtentReports extent = new ExtentReports();
+	
+	public ExtentReportTestNG()
+	{
+		
+		this.avent.config().enableOfflineMode(true);
+		avent.config().setTimelineEnabled(true);
+		avent.config().setCss("css-string");
+		avent.config().setDocumentTitle("page title");
+		avent.config().setEncoding("utf-8");
+		avent.config().setJs("js-string");
+		avent.config().setProtocol(Protocol.HTTPS);
+		avent.config().setReportName("build name");
+		avent.config().setTheme(Theme.DARK);
+		avent.config().setTimeStampFormat("MMM dd, yyyy HH:mm:ss");
+	}
+	
+	
+	public void generateHTMLReport()
+	{
+		ExtentSparkReporter htmlPath = new ExtentSparkReporter(System.getProperty("user.dir")+"\\Reports\\Report.html");
+		extent.attachReporter(htmlPath);
+		extent.flush();
+		
+	}
+	
+	
+	
+	
+	
+	
+
+}
